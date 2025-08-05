@@ -2,7 +2,7 @@ import * as admin from 'firebase-admin'
 import * as functions from 'firebase-functions'
 import { getFirestore } from 'firebase-admin/firestore'
 import { ProjectService } from '../../services/data-management/project-service'
-import { PROJECT_API_STATUS } from '@ecologen/shared-types'
+
 import express from 'express'
 import cors from 'cors'
 

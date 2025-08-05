@@ -1,5 +1,5 @@
 /**
- * EcoloGen Cloud Functions
+ * Cross-Referencer Cloud Functions
  * Main entry point for serverless backend functions
  */
 
@@ -17,16 +17,18 @@ setGlobalOptions({
   timeoutSeconds: 540,
 });
 
-// Simple hello world function for initial deployment
-export const helloWorld = onRequest((request, response) => {
-  response.json({ message: 'EcoloGen Cloud Functions are running!' });
-});
+// --- Export Functions ---
 
-// Export all functions - now restored from temp
-export { extractPdfTables } from './pdf-extraction';
-export { processDocument } from './document-processing';  
-export { generateReportSection } from './ai-generation';
+// New CSV job processor
+export { processCrossReferenceJob } from './job-processor';
+
+// WebSocket handler for real-time updates (can be reused)
 export { handleWebSocketConnection } from './websocket-handler';
 
-// Project management API
-export { projectApi } from './api/projects';
+// Main API handler (will need refactoring for jobs)
+export { projectApi as jobApi } from './api/jobs';
+
+// Simple hello world function for testing deployment
+export const helloWorld = onRequest((request, response) => {
+  response.json({ message: 'Cross-Referencer Cloud Functions are running!' });
+});
