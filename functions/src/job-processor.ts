@@ -14,7 +14,7 @@ import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs';
 import * as Papa from 'papaparse';
-import { CrossReferenceJob, CsvInput, JOBS_COLLECTION, AUDIT_ACTIONS } from 'shared-types';
+import { CrossReferenceJob, CsvInput, JOBS_COLLECTION, AUDIT_ACTIONS } from 'packages/shared-types/src/index';
 
 // Ensure Firebase is initialized
 if (admin.apps.length === 0) {

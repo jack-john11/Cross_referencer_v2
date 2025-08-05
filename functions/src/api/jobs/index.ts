@@ -1,76 +1,75 @@
-import * as admin from 'firebase-admin'
+/**
+ * Jobs API Endpoint
+ * 
+ * Handles HTTP requests for creating, listing, and managing Cross-Reference Jobs.
+ */
+
 import * as functions from 'firebase-functions'
 import { getFirestore } from 'firebase-admin/firestore'
-import { ProjectService } from '../../services/data-management/project-service'
-
+import { CrossReferenceJob, JobCreateInput, JOBS_COLLECTION, AUDIT_ACTIONS } from 'shared-types'
 import express from 'express'
 import cors from 'cors'
+import { v4 as uuidv4 } from 'uuid'
 
-// Initialize Express app
 const app = express()
 app.use(cors({ origin: true }))
 app.use(express.json())
 
-// Initialize Firestore and Project Service
 const db = getFirestore()
-const projectService = new ProjectService(db)
 
 // Middleware for user authentication (placeholder)
 const authenticateUser = (req: express.Request, res: express.Response, next: express.NextFunction) => {
   // TODO: Replace with actual Firebase Authentication check
-  const userId = req.headers['x-user-id']
-  if (!userId || typeof userId !== 'string') {
-    res.status(401).send('Unauthorized')
+  const userId = req.headers['x-user-id'] as string || 'test-user'
+  if (!userId) {
+    res.status(401).send({ error: 'Unauthorized' })
     return
   }
   ;(req as any).userId = userId
   next()
 }
 
-// Routes
+// Create a new job
 app.post('/', authenticateUser, async (req, res) => {
   try {
-    const project = await projectService.createProject(req.body, (req as any).userId)
-    res.status(201).send(project)
-  } catch (error) {
-    const { statusCode, message } = projectService.handleError(error)
-    res.status(statusCode).send({ error: message })
+    const jobInput: JobCreateInput = req.body
+    const userId = (req as any).userId
+    const jobId = uuidv4()
+
+    const newJob: CrossReferenceJob = {
+      id: jobId,
+      ...jobInput,
+      userId,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      status: 'pending', // The backend function will pick up jobs in 'pending' state
+      auditTrail: [{
+        action: AUDIT_ACTIONS.CREATE,
+        userId,
+        timestamp: new Date()
+      }]
+    }
+
+    await db.collection(JOBS_COLLECTION).doc(jobId).set(newJob)
+    
+    res.status(201).send(newJob)
+  } catch (error: any) {
+    console.error("Failed to create job:", error)
+    res.status(500).send({ error: error.message })
   }
 })
 
+// List all jobs for the user
 app.get('/', authenticateUser, async (req, res) => {
   try {
-    const projects = await projectService.getProjects((req as any).userId)
-    res.status(200).send(projects)
-  } catch (error) {
-    const { statusCode, message } = projectService.handleError(error)
-    res.status(statusCode).send({ error: message })
+    const userId = (req as any).userId
+    const snapshot = await db.collection(JOBS_COLLECTION).where('userId', '==', userId).get()
+    const jobs = snapshot.docs.map(doc => doc.data() as CrossReferenceJob)
+    res.status(200).send(jobs)
+  } catch (error: any) {
+    console.error("Failed to list jobs:", error)
+    res.status(500).send({ error: error.message })
   }
 })
 
-app.get('/:id', authenticateUser, async (req, res) => {
-  try {
-    const project = await projectService.getProjectById(req.params.id, (req as any).userId)
-    if (!project) {
-      res.status(404).send({ error: 'Project not found' })
-    } else {
-      res.status(200).send(project)
-    }
-  } catch (error) {
-    const { statusCode, message } = projectService.handleError(error)
-    res.status(statusCode).send({ error: message })
-  }
-})
-
-app.patch('/:id', authenticateUser, async (req, res) => {
-  try {
-    const project = await projectService.updateProject(req.params.id, req.body, (req as any).userId)
-    res.status(200).send(project)
-  } catch (error) {
-    const { statusCode, message } = projectService.handleError(error)
-    res.status(statusCode).send({ error: message })
-  }
-})
-
-// Export the Express API as a Cloud Function
-export const projectApi = functions.https.onRequest(app)
+export const jobApi = functions.https.onRequest(app)

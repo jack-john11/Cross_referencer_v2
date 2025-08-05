@@ -1,15 +1,15 @@
 /**
- * Project List Component
+ * Job List Component
  * 
- * Displays a grid of project cards with loading and error states
+ * Displays a grid of job cards with loading and error states
  */
 
 'use client'
 
 import { useState } from 'react'
 import { Plus, RefreshCw, AlertCircle, FolderX } from 'lucide-react'
-import { Project } from '@ecologen/shared-types'
-import { ProjectCard } from './project-card'
+import { CrossReferenceJob } from 'shared-types'
+import { JobCard } from './job-card'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Alert, AlertDescription } from '@/components/ui/alert'
@@ -21,42 +21,36 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 
-interface ProjectListProps {
-  projects: Project[]
+interface JobListProps {
+  jobs: CrossReferenceJob[]
   loading: boolean
   error: string | null
-  selectedProjectIds: Set<string>
-  onProjectSelect: (project: Project) => void
-  onProjectEdit: (project: Project) => void
-  onProjectArchive: (project: Project) => void
+  onDelete: (job: CrossReferenceJob) => void
   onRefresh: () => void
   onCreateNew: () => void
   className?: string
 }
 
-export function ProjectList({
-  projects,
+export function JobList({
+  jobs,
   loading,
   error,
-  selectedProjectIds,
-  onProjectSelect,
-  onProjectEdit,
-  onProjectArchive,
+  onDelete,
   onRefresh,
   onCreateNew,
   className = ''
-}: ProjectListProps) {
-  const [archiveConfirm, setArchiveConfirm] = useState<Project | null>(null)
+}: JobListProps) {
+  const [deleteConfirm, setDeleteConfirm] = useState<CrossReferenceJob | null>(null)
 
-  const handleArchiveConfirm = () => {
-    if (archiveConfirm) {
-      onProjectArchive(archiveConfirm)
-      setArchiveConfirm(null)
+  const handleDeleteConfirm = () => {
+    if (deleteConfirm) {
+      onDelete(deleteConfirm)
+      setDeleteConfirm(null)
     }
   }
 
   // Loading skeleton
-  if (loading && projects.length === 0) {
+  if (loading && jobs.length === 0) {
     return (
       <div className={`space-y-6 ${className}`}>
         <div className="flex items-center justify-between">
@@ -65,7 +59,7 @@ export function ProjectList({
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Array.from({ length: 6 }).map((_, i) => (
-            <ProjectCardSkeleton key={i} />
+            <JobCardSkeleton key={i} />
           ))}
         </div>
       </div>
@@ -73,13 +67,13 @@ export function ProjectList({
   }
 
   // Error state
-  if (error && projects.length === 0) {
+  if (error && jobs.length === 0) {
     return (
       <div className={`space-y-6 ${className}`}>
         <Alert variant="destructive">
           <AlertCircle className="h-4 w-4" />
           <AlertDescription>
-            Failed to load projects: {error}
+            Failed to load jobs: {error}
           </AlertDescription>
         </Alert>
         <div className="flex justify-center">
@@ -93,20 +87,20 @@ export function ProjectList({
   }
 
   // Empty state
-  if (projects.length === 0 && !loading) {
+  if (jobs.length === 0 && !loading) {
     return (
       <div className={`text-center py-12 ${className}`}>
         <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
           <FolderX className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
           <h3 className="text-lg font-medium text-foreground mb-2">
-            No projects found
+            No jobs found
           </h3>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-            Get started by creating your first ecological assessment project.
+            Get started by creating your first cross-reference job.
           </p>
           <Button onClick={onCreateNew}>
             <Plus className="mr-2 h-4 w-4" />
-            Create Your First Project
+            Create Your First Job
           </Button>
         </div>
       </div>
@@ -115,11 +109,10 @@ export function ProjectList({
 
   return (
     <div className={`space-y-6 ${className}`}>
-      {/* Header with refresh and create buttons */}
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <h2 className="text-xl font-semibold text-foreground">
-            Projects ({projects.length})
+            Jobs ({jobs.length})
           </h2>
           <Button
             onClick={onRefresh}
@@ -135,12 +128,11 @@ export function ProjectList({
         
         <Button onClick={onCreateNew}>
           <Plus className="mr-2 h-4 w-4" />
-          New Project
+          New Job
         </Button>
       </div>
 
-      {/* Error banner for partial failures */}
-      {error && projects.length > 0 && (
+      {error && jobs.length > 0 && (
         <Alert variant="destructive">
           <AlertCircle className="h-4 w-4" />
           <AlertDescription>
@@ -149,22 +141,17 @@ export function ProjectList({
         </Alert>
       )}
 
-      {/* Project grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            selected={selectedProjectIds.has(project.id)}
-            onSelect={() => onProjectSelect(project)}
-            onEdit={() => onProjectEdit(project)}
-            onArchive={() => setArchiveConfirm(project)}
+        {jobs.map((job) => (
+          <JobCard
+            key={job.id}
+            job={job}
+            onDelete={() => setDeleteConfirm(job)}
           />
         ))}
       </div>
 
-      {/* Loading indicator for additional data */}
-      {loading && projects.length > 0 && (
+      {loading && jobs.length > 0 && (
         <div className="flex justify-center py-4">
           <div className="flex items-center space-x-2 text-gray-500">
             <RefreshCw className="h-4 w-4 animate-spin" />
@@ -173,29 +160,27 @@ export function ProjectList({
         </div>
       )}
 
-      {/* Archive confirmation dialog */}
-      <Dialog open={!!archiveConfirm} onOpenChange={() => setArchiveConfirm(null)}>
+      <Dialog open={!!deleteConfirm} onOpenChange={() => setDeleteConfirm(null)}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Archive Project</DialogTitle>
+            <DialogTitle>Delete Job</DialogTitle>
             <DialogDescription>
-              Are you sure you want to archive "{archiveConfirm?.name}"? 
-              This will move the project to your archived projects list. 
-              You can restore it later if needed.
+              Are you sure you want to delete "{deleteConfirm?.name}"? 
+              This action cannot be undone.
             </DialogDescription>
           </DialogHeader>
           <div className="flex justify-end space-x-2 mt-4">
             <Button
               variant="outline"
-              onClick={() => setArchiveConfirm(null)}
+              onClick={() => setDeleteConfirm(null)}
             >
               Cancel
             </Button>
             <Button
               variant="destructive"
-              onClick={handleArchiveConfirm}
+              onClick={handleDeleteConfirm}
             >
-              Archive Project
+              Delete Job
             </Button>
           </div>
         </DialogContent>
@@ -204,10 +189,7 @@ export function ProjectList({
   )
 }
 
-/**
- * Project Card Skeleton for loading state
- */
-function ProjectCardSkeleton() {
+function JobCardSkeleton() {
   return (
     <div className="border border-border bg-card text-card-foreground rounded-lg p-6 space-y-4 shadow-sm">
       <div className="flex items-start justify-between">
