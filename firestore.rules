@@ -1,0 +1,37 @@
+rules_version = '2';
+
+// Firestore Security Rules for EcoloGen
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow reads and writes for authenticated users to their own documents
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Allow Cloud Functions to read/write all documents
+    match /{document=**} {
+      allow read, write: if request.auth == null; // Cloud Functions run without auth context
+    }
+    
+    // Specific collections that functions need access to
+    match /documents/{docId} {
+      allow read, write: if true; // Allow functions to manage documents
+    }
+    
+    match /extractions/{extractionId} {
+      allow read, write: if true; // Allow functions to manage extractions
+    }
+    
+    match /generations/{generationId} {
+      allow read, write: if true; // Allow functions to manage generations
+    }
+    
+    match /projects/{projectId} {
+      allow read, write: if true; // Allow functions to manage projects
+    }
+    
+    match /progress/{progressId} {
+      allow read, write: if true; // Allow functions to manage progress updates
+    }
+  }
+}

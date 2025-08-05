@@ -1,0 +1,34 @@
+rules_version = '2';
+
+// Firebase Storage Security Rules for EcoloGen
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Allow uploads to projects directory
+    match /projects/{projectId}/{documentType}/{fileName} {
+      // Allow read/write for authenticated users to their own project files
+      // For now, allow all uploads for testing (TODO: Add proper auth)
+      allow read, write: if true;
+      
+      // Validate file types
+      allow write: if request.resource.size < 100 * 1024 * 1024 // Max 100MB
+                   && (
+                     request.resource.contentType.matches('application/pdf') ||
+                     request.resource.contentType.matches('text/csv') ||
+                     request.resource.contentType.matches('application/vnd.ms-excel') ||
+                     request.resource.contentType.matches('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') ||
+                     request.resource.contentType.matches('application/zip')
+                   );
+    }
+    
+    // Allow reading processed results
+    match /results/{projectId}/{resultId} {
+      allow read: if true; // For now, allow all reads
+    }
+    
+    // Deny all other paths
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

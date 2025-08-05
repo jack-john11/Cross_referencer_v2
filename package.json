@@ -1,0 +1,33 @@
+{
+  "name": "ecologen-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EcoLogen AI Ecological Report Generator - Monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "functions"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "type-check": "npm run type-check --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "deploy:functions": "cd functions && npm run deploy",
+    "deploy:web": "cd apps/web && npm run deploy",
+    "setup": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}

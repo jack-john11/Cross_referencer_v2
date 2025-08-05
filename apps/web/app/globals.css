@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 25% 82%; /* Much darker, warm beige */
+    --foreground: 30 15% 15%; /* Much darker text */
+    --card: 40 25% 86%; /* Darker cream cards */
+    --card-foreground: 30 15% 15%;
+    --popover: 40 25% 86%;
+    --popover-foreground: 30 15% 15%;
+    --primary: 120 35% 35%; /* Deeper, richer sage green */
+    --primary-foreground: 60 50% 95%;
+    --secondary: 40 20% 75%; /* Much darker earthy gray-brown */
+    --secondary-foreground: 30 15% 15%;
+    --muted: 40 15% 78%; /* Darker muted background */
+    --muted-foreground: 40 10% 35%; /* Much darker muted text */
+    --accent: 120 35% 45%; /* Richer, deeper green */
+    --accent-foreground: 30 15% 15%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 60 50% 95%;
+    --border: 40 15% 70%; /* Much more visible borders */
+    --input: 40 15% 75%; /* Darker input background */
+    --ring: 120 35% 35%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 120 10% 15%; /* Dark, desaturated green-gray */
+    --foreground: 40 10% 85%; /* Light, warm gray */
+    --card: 120 10% 18%;
+    --card-foreground: 40 10% 85%;
+    --popover: 120 10% 15%;
+    --popover-foreground: 40 10% 85%;
+    --primary: 120 25% 55%; /* Muted sage green, lighter for dark mode */
+    --primary-foreground: 120 10% 15%;
+    --secondary: 30 10% 25%; /* Dark brown-gray */
+    --secondary-foreground: 40 10% 85%;
+    --muted: 30 10% 25%;
+    --muted-foreground: 40 8% 65%;
+    --accent: 120 15% 30%;
+    --accent-foreground: 40 10% 85%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 120 8% 28%; /* Darker green-gray border, more visible */
+    --input: 120 8% 26%; /* Slightly darker input background */
+    --ring: 120 25% 55%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  .glass-header {
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    background: hsl(var(--background) / 0.15);
+    border-bottom: 1px solid hsl(var(--border) / 0.3);
+  }
+  /* Enhanced scrollbar styling - no white elements */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.6) hsl(var(--muted) / 0.8);
+  }
+  *::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+  *::-webkit-scrollbar-track {
+    background: hsl(var(--muted) / 0.6);
+    border-radius: 8px;
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.7);
+    border-radius: 8px;
+    border: 2px solid hsl(var(--muted) / 0.6);
+    transition: all 0.2s ease-in-out;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+    border: 1px solid hsl(var(--border) / 0.5);
+    transform: scale(1.05);
+  }
+  *::-webkit-scrollbar-thumb:active {
+    background: hsl(var(--primary) / 0.9);
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
+  *::-webkit-scrollbar-corner {
+    background: hsl(var(--muted) / 0.6);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+  
+  /* Ensure all default browser elements respect theme */
+  select, input, textarea, button {
+    border-color: hsl(var(--border));
+  }
+  
+  /* Override any remaining system defaults */
+  *:not([class*="border-"]) {
+    border-color: hsl(var(--border));
+  }
+  
+  /* Enhanced dashed borders for document dropzones */
+  .border-dashed {
+    border-style: dashed;
+    border-width: 2px;
+    /* Create larger, more visible dashes */
+    background-image: none;
+  }
+  
+  /* Ensure dashed borders are prominent but themed */
+  .group.border-dashed:hover {
+    animation: dash-pulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes dash-pulse {
+    0%, 100% { border-color: hsl(var(--primary) / 0.3); }
+    50% { border-color: hsl(var(--primary) / 0.6); }
+  }
+  
+  /* Simplified dropzone styling without scale animations */
+}

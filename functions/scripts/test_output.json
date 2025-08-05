@@ -1,0 +1,1867 @@
+{
+  "success": true,
+  "document_type": "NVR",
+  "tables": [
+    {
+      "pageNumber": [
+        7,
+        10
+      ],
+      "tableIndex": 0,
+      "tableName": "flora",
+      "description": "NVR Flora Data",
+      "headers": [
+        "Species",
+        "Common Name",
+        "SS",
+        "NS",
+        "Bio",
+        "Observation Count",
+        "Last Recorded"
+      ],
+      "rows": [
+        [
+          "Acacia ulicifolia",
+          "juniper wattle",
+          "r",
+          "",
+          "n",
+          "39",
+          "06-May-2024"
+        ],
+        [
+          "Baumea gunnii",
+          "slender twigsedge",
+          "pr",
+          "",
+          "n",
+          "1",
+          "16-Mar-2018"
+        ],
+        [
+          "Caladenia caudata",
+          "tailed spider-orchid",
+          "v",
+          "VU",
+          "e",
+          "2",
+          "22-Oct-1992"
+        ],
+        [
+          "Caladenia pusilla",
+          "tiny fingers",
+          "r",
+          "",
+          "n",
+          "2",
+          "12-Oct-1998"
+        ],
+        [
+          "Caustis pentandra",
+          "thick twistsedge",
+          "r",
+          "",
+          "n",
+          "415",
+          "04-Apr-2023"
+        ],
+        [
+          "Conospermum hookeri",
+          "tasmanian smokebush",
+          "v",
+          "VU",
+          "e",
+          "119",
+          "16-Oct-2022"
+        ],
+        [
+          "Cryptandra exilis",
+          "slender pearlflower",
+          "e",
+          "",
+          "e",
+          "1",
+          "20-May-1982"
+        ],
+        [
+          "Cyrtostylis robusta",
+          "large gnat-orchid",
+          "r",
+          "",
+          "n",
+          "10",
+          "08-Jul-2020"
+        ],
+        [
+          "Desmodium gunnii",
+          "southern ticktrefoil",
+          "v",
+          "",
+          "n",
+          "42",
+          "10-Jun-2019"
+        ],
+        [
+          "Euphrasia collina subsp. deflexifolia",
+          "eastern eyebright",
+          "r",
+          "",
+          "e",
+          "1",
+          "15-Jun-2000"
+        ],
+        [
+          "Gratiola pubescens",
+          "hairy brooklime",
+          "r",
+          "",
+          "n",
+          "3",
+          "28-Oct-2020"
+        ],
+        [
+          "Gynatrix pulchella",
+          "fragrant hempbush",
+          "r",
+          "",
+          "n",
+          "1",
+          "21-May-1981"
+        ],
+        [
+          "Hibbertia virgata",
+          "twiggy guineaflower",
+          "r",
+          "",
+          "n",
+          "3",
+          "17-Sep-2020"
+        ],
+        [
+          "Lepidosperma tortuosum",
+          "twisting rapiersedge",
+          "r",
+          "",
+          "n",
+          "24",
+          "10-Jan-2022"
+        ],
+        [
+          "Lepidosperma viscidum",
+          "sticky swordsedge",
+          "r",
+          "",
+          "n",
+          "1",
+          "15-Apr-2004"
+        ],
+        [
+          "Lepilaena patentifolia",
+          "spreading watermat",
+          "r",
+          "",
+          "n",
+          "9",
+          "30-Nov-1994"
+        ],
+        [
+          "Liparophyllum exaltatum",
+          "erect marshwort",
+          "r",
+          "",
+          "n",
+          "2",
+          "12-Nov-2019"
+        ],
+        [
+          "Lotus australis",
+          "australian trefoil",
+          "r",
+          "",
+          "n",
+          "1",
+          "02-Dec-1877"
+        ],
+        [
+          "Microtidium atratum",
+          "yellow onion-orchid",
+          "r",
+          "",
+          "n",
+          "6",
+          "01-Nov-1990"
+        ],
+        [
+          "Phyllangium divergens",
+          "wiry mitrewort",
+          "v",
+          "",
+          "n",
+          "1",
+          "15-Oct-1892"
+        ],
+        [
+          "Plantago debilis",
+          "shade plantain",
+          "r",
+          "",
+          "n",
+          "7",
+          "28-Oct-2020"
+        ],
+        [
+          "Pterostylis grandiflora",
+          "superb greenhood",
+          "r",
+          "",
+          "n",
+          "1",
+          "20-Sep-2022"
+        ],
+        [
+          "Ruppia megacarpa",
+          "largefruit seatassel",
+          "r",
+          "",
+          "n",
+          "7",
+          "14-Nov-1991"
+        ],
+        [
+          "Scleranthus diander",
+          "tufted knawel",
+          "v",
+          "",
+          "n",
+          "1",
+          "01-Jan-1949"
+        ],
+        [
+          "Scutellaria humilis",
+          "dwarf skullcap",
+          "r",
+          "",
+          "n",
+          "1",
+          "10-Nov-1945"
+        ],
+        [
+          "Spyridium parvifolium var. molle",
+          "soft dustymiller",
+          "r",
+          "",
+          "e",
+          "2",
+          "19-Mar-2008"
+        ],
+        [
+          "Spyridium parvifolium var. parvifolium",
+          "coast dustymiller",
+          "r",
+          "",
+          "n",
+          "2",
+          "11-May-2009"
+        ],
+        [
+          "Stenopetalum lineare",
+          "narrow threadpetal",
+          "e",
+          "",
+          "n",
+          "1",
+          "22-Sep-1985"
+        ],
+        [
+          "Stuckenia pectinata",
+          "fennel pondweed",
+          "r",
+          "",
+          "n",
+          "3",
+          "06-May-2011"
+        ],
+        [
+          "Thelymitra antennifera",
+          "rabbit ears",
+          "e",
+          "",
+          "n",
+          "1",
+          "01-Nov-1976"
+        ],
+        [
+          "Thelymitra malvina",
+          "mauvetuft sun-orchid",
+          "e",
+          "",
+          "n",
+          "2",
+          "12-Nov-2010"
+        ],
+        [
+          "Thryptomene micrantha",
+          "ribbed heathmyrtle",
+          "v",
+          "",
+          "n",
+          "1",
+          "09-Jan-1988"
+        ],
+        [
+          "Triglochin minutissima",
+          "tiny arrowgrass",
+          "r",
+          "",
+          "n",
+          "1",
+          "01-Jan-1995"
+        ],
+        [
+          "Utricularia australis",
+          "yellow bladderwort",
+          "r",
+          "",
+          "n",
+          "11",
+          "11-Feb-2022"
+        ],
+        [
+          "Xanthorrhoea arenaria",
+          "sand grasstree",
+          "v",
+          "VU",
+          "e",
+          "1",
+          "07-Nov-1945"
+        ],
+        [
+          "Xanthorrhoea bracteata",
+          "shiny grasstree",
+          "v",
+          "EN",
+          "e",
+          "1",
+          "01-Nov-2004"
+        ],
+        [
+          "Hirundapus caudacutus",
+          "white-throated needletail",
+          "",
+          "VU",
+          "n",
+          "1",
+          "01-Jan-1900"
+        ]
+      ],
+      "processed_data": [
+        {
+          "Species": "Acacia ulicifolia",
+          "Common Name": "juniper wattle",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "39",
+          "Last Recorded": "06-05-2024"
+        },
+        {
+          "Species": "Baumea gunnii",
+          "Common Name": "slender twigsedge",
+          "SS": "pr",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "16-03-2018"
+        },
+        {
+          "Species": "Caladenia caudata",
+          "Common Name": "tailed spider-orchid",
+          "SS": "v",
+          "NS": "VU",
+          "Bio": "e",
+          "Observation Count": "2",
+          "Last Recorded": "22-10-1992"
+        },
+        {
+          "Species": "Caladenia pusilla",
+          "Common Name": "tiny fingers",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "12-10-1998"
+        },
+        {
+          "Species": "Caustis pentandra",
+          "Common Name": "thick twistsedge",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "415",
+          "Last Recorded": "04-04-2023"
+        },
+        {
+          "Species": "Conospermum hookeri",
+          "Common Name": "tasmanian smokebush",
+          "SS": "v",
+          "NS": "VU",
+          "Bio": "e",
+          "Observation Count": "119",
+          "Last Recorded": "16-10-2022"
+        },
+        {
+          "Species": "Cryptandra exilis",
+          "Common Name": "slender pearlflower",
+          "SS": "e",
+          "NS": null,
+          "Bio": "e",
+          "Observation Count": "1",
+          "Last Recorded": "20-05-1982"
+        },
+        {
+          "Species": "Cyrtostylis robusta",
+          "Common Name": "large gnat-orchid",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "10",
+          "Last Recorded": "08-07-2020"
+        },
+        {
+          "Species": "Desmodium gunnii",
+          "Common Name": "southern ticktrefoil",
+          "SS": "v",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "42",
+          "Last Recorded": "10-06-2019"
+        },
+        {
+          "Species": "Euphrasia collina subsp. deflexifolia",
+          "Common Name": "eastern eyebright",
+          "SS": "r",
+          "NS": null,
+          "Bio": "e",
+          "Observation Count": "1",
+          "Last Recorded": "15-06-2000"
+        },
+        {
+          "Species": "Gratiola pubescens",
+          "Common Name": "hairy brooklime",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "28-10-2020"
+        },
+        {
+          "Species": "Gynatrix pulchella",
+          "Common Name": "fragrant hempbush",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "21-05-1981"
+        },
+        {
+          "Species": "Hibbertia virgata",
+          "Common Name": "twiggy guineaflower",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "17-09-2020"
+        },
+        {
+          "Species": "Lepidosperma tortuosum",
+          "Common Name": "twisting rapiersedge",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "24",
+          "Last Recorded": "10-01-2022"
+        },
+        {
+          "Species": "Lepidosperma viscidum",
+          "Common Name": "sticky swordsedge",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "15-04-2004"
+        },
+        {
+          "Species": "Lepilaena patentifolia",
+          "Common Name": "spreading watermat",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "9",
+          "Last Recorded": "30-11-1994"
+        },
+        {
+          "Species": "Liparophyllum exaltatum",
+          "Common Name": "erect marshwort",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "12-11-2019"
+        },
+        {
+          "Species": "Lotus australis",
+          "Common Name": "australian trefoil",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "02-12-1877"
+        },
+        {
+          "Species": "Microtidium atratum",
+          "Common Name": "yellow onion-orchid",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "6",
+          "Last Recorded": "01-11-1990"
+        },
+        {
+          "Species": "Phyllangium divergens",
+          "Common Name": "wiry mitrewort",
+          "SS": "v",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "15-10-1892"
+        },
+        {
+          "Species": "Plantago debilis",
+          "Common Name": "shade plantain",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "7",
+          "Last Recorded": "28-10-2020"
+        },
+        {
+          "Species": "Pterostylis grandiflora",
+          "Common Name": "superb greenhood",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "20-09-2022"
+        },
+        {
+          "Species": "Ruppia megacarpa",
+          "Common Name": "largefruit seatassel",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "7",
+          "Last Recorded": "14-11-1991"
+        },
+        {
+          "Species": "Scleranthus diander",
+          "Common Name": "tufted knawel",
+          "SS": "v",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "01-01-1949"
+        },
+        {
+          "Species": "Scutellaria humilis",
+          "Common Name": "dwarf skullcap",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "10-11-1945"
+        },
+        {
+          "Species": "Spyridium parvifolium var. molle",
+          "Common Name": "soft dustymiller",
+          "SS": "r",
+          "NS": null,
+          "Bio": "e",
+          "Observation Count": "2",
+          "Last Recorded": "19-03-2008"
+        },
+        {
+          "Species": "Spyridium parvifolium var. parvifolium",
+          "Common Name": "coast dustymiller",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "11-05-2009"
+        },
+        {
+          "Species": "Stenopetalum lineare",
+          "Common Name": "narrow threadpetal",
+          "SS": "e",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "22-09-1985"
+        },
+        {
+          "Species": "Stuckenia pectinata",
+          "Common Name": "fennel pondweed",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "06-05-2011"
+        },
+        {
+          "Species": "Thelymitra antennifera",
+          "Common Name": "rabbit ears",
+          "SS": "e",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "01-11-1976"
+        },
+        {
+          "Species": "Thelymitra malvina",
+          "Common Name": "mauvetuft sun-orchid",
+          "SS": "e",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "12-11-2010"
+        },
+        {
+          "Species": "Thryptomene micrantha",
+          "Common Name": "ribbed heathmyrtle",
+          "SS": "v",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "09-01-1988"
+        },
+        {
+          "Species": "Triglochin minutissima",
+          "Common Name": "tiny arrowgrass",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "01-01-1995"
+        },
+        {
+          "Species": "Utricularia australis",
+          "Common Name": "yellow bladderwort",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "11",
+          "Last Recorded": "11-02-2022"
+        },
+        {
+          "Species": "Xanthorrhoea arenaria",
+          "Common Name": "sand grasstree",
+          "SS": "v",
+          "NS": "VU",
+          "Bio": "e",
+          "Observation Count": "1",
+          "Last Recorded": "07-11-1945"
+        },
+        {
+          "Species": "Xanthorrhoea bracteata",
+          "Common Name": "shiny grasstree",
+          "SS": "v",
+          "NS": "EN",
+          "Bio": "e",
+          "Observation Count": "1",
+          "Last Recorded": "01-11-2004"
+        },
+        {
+          "Species": "Hirundapus caudacutus",
+          "Common Name": "white-throated needletail",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "01-01-1900"
+        }
+      ],
+      "record_count": 37,
+      "mergedCells": [],
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pageNumber": [
+        13
+      ],
+      "tableIndex": 1,
+      "tableName": "fauna",
+      "description": "NVR Fauna Data",
+      "headers": [
+        "Species",
+        "Common Name",
+        "SS",
+        "NS",
+        "Bio",
+        "Observation Count",
+        "Last Recorded"
+      ],
+      "rows": [
+        [
+          "Antipodia chaostola subsp. leucophaea",
+          "chaostola skipper",
+          "e",
+          "EN",
+          "e",
+          "1",
+          "05-Aug-2017"
+        ],
+        [
+          "Aquila audax",
+          "wedge-tailed eagle",
+          "pe",
+          "PEN",
+          "n",
+          "6",
+          "30-Sep-2022"
+        ],
+        [
+          "Aquila audax subsp. fleayi",
+          "tasmanian wedge-tailed eagle",
+          "e",
+          "EN",
+          "e",
+          "12",
+          "03-Dec-2013"
+        ],
+        [
+          "Arctocephalus forsteri",
+          "new zealand fur seal",
+          "r",
+          "",
+          "n",
+          "2",
+          "30-Sep-2018"
+        ],
+        [
+          "Ardenna grisea",
+          "sooty shearwater",
+          "",
+          "VU",
+          "n",
+          "1",
+          "19-Jan-2021"
+        ],
+        [
+          "Arenaria interpres",
+          "ruddy turnstone",
+          "",
+          "VU",
+          "n",
+          "4",
+          "17-Sep-2017"
+        ],
+        [
+          "Balaenoptera borealis",
+          "sei whale",
+          "",
+          "VU",
+          "m",
+          "1",
+          "23-Sep-2018"
+        ],
+        [
+          "Botaurus poiciloptilus",
+          "australasian bittern",
+          "",
+          "EN",
+          "n",
+          "1",
+          "14-Sep-1980"
+        ],
+        [
+          "Calidris acuminata",
+          "sharp-tailed sandpiper",
+          "",
+          "VU",
+          "n",
+          "1",
+          "01-Jan-1980"
+        ],
+        [
+          "Dasyurus maculatus",
+          "spotted-tailed quoll",
+          "r",
+          "VU",
+          "n",
+          "1",
+          "25-Sep-2020"
+        ],
+        [
+          "Dasyurus maculatus subsp. maculatus",
+          "spotted-tailed quoll",
+          "r",
+          "VU",
+          "n",
+          "3",
+          "04-Feb-1997"
+        ],
+        [
+          "Dasyurus viverrinus",
+          "eastern quoll",
+          "",
+          "EN",
+          "n",
+          "6",
+          "19-Dec-1996"
+        ],
+        [
+          "Diomedea cauta subsp. cauta",
+          "shy albatross",
+          "pv",
+          "PVU",
+          "",
+          "1",
+          "08-Sep-1979"
+        ],
+        [
+          "Diomedea epomophora",
+          "southern royal albatross",
+          "",
+          "VU",
+          "n",
+          "1",
+          "10-Feb-2017"
+        ],
+        [
+          "Eubalaena australis",
+          "southern right whale",
+          "e",
+          "EN",
+          "m",
+          "33",
+          "25-Jul-2021"
+        ],
+        [
+          "Gallinago hardwickii",
+          "lathams snipe",
+          "",
+          "VU",
+          "n",
+          "2",
+          "14-Sep-1980"
+        ],
+        [
+          "Gazameda gunnii",
+          "Gunn's screw shell",
+          "v",
+          "",
+          "ae",
+          "3",
+          "16-Dec-1997"
+        ],
+        [
+          "Haliaeetus leucogaster",
+          "white-bellied sea-eagle",
+          "v",
+          "",
+          "n",
+          "57",
+          "29-Jun-2023"
+        ],
+        [
+          "Hirundapus caudacutus",
+          "white-throated needletail",
+          "",
+          "VU",
+          "n",
+          "15",
+          "28-Mar-2021"
+        ],
+        [
+          "Lathamus discolor",
+          "swift parrot",
+          "e",
+          "CR",
+          "mbe",
+          "27",
+          "08-Nov-2023"
+        ],
+        [
+          "Limosa lapponica subsp. baueri",
+          "western alaskan bar-tailed godwit",
+          "",
+          "EN",
+          "n",
+          "1",
+          "14-Jan-1980"
+        ],
+        [
+          "Litoria raniformis",
+          "green and gold frog",
+          "v",
+          "VU",
+          "n",
+          "1",
+          "07-Sep-1993"
+        ],
+        [
+          "Megaptera novaeangliae",
+          "humpback whale",
+          "e",
+          "",
+          "m",
+          "17",
+          "29-Jul-2019"
+        ],
+        [
+          "Mirounga leonina",
+          "southern elephant seal",
+          "e",
+          "VU",
+          "n",
+          "4",
+          "18-Apr-2017"
+        ],
+        [
+          "Mirounga leonina subsp. macquariensis",
+          "southern elephant seal",
+          "pe",
+          "PVU",
+          "n",
+          "9",
+          "13-Aug-2018"
+        ],
+        [
+          "Neophema chrysostoma",
+          "blue-winged parrot",
+          "",
+          "VU",
+          "n",
+          "3",
+          "09-Feb-2014"
+        ],
+        [
+          "Numenius madagascariensis",
+          "eastern curlew",
+          "e",
+          "CR",
+          "n",
+          "2",
+          "14-Sep-1980"
+        ],
+        [
+          "Pachyptila turtur subantarctica",
+          "southern fairy prion",
+          "e",
+          "VU",
+          "",
+          "1",
+          "07-Feb-1977"
+        ],
+        [
+          "Pseudemoia rawlinsoni",
+          "glossy grass skink",
+          "r",
+          "",
+          "n",
+          "3",
+          "04-Oct-1978"
+        ],
+        [
+          "Pseudomys novaehollandiae",
+          "new holland mouse",
+          "e",
+          "VU",
+          "n",
+          "2",
+          "01-Apr-2009"
+        ],
+        [
+          "Pteropus poliocephalus",
+          "grey-headed flying-fox",
+          "",
+          "VU",
+          "n",
+          "1",
+          "29-Dec-2010"
+        ],
+        [
+          "Sarcophilus harrisii",
+          "tasmanian devil",
+          "e",
+          "EN",
+          "e",
+          "7",
+          "23-Apr-2023"
+        ],
+        [
+          "Seriolella brama",
+          "Blue Warehou",
+          "",
+          "CD",
+          "n",
+          "3",
+          "01-Jan-2002"
+        ],
+        [
+          "Sterna nereis subsp. nereis",
+          "fairy tern",
+          "pv",
+          "PVU",
+          "",
+          "9",
+          "14-Sep-1980"
+        ],
+        [
+          "Sternula albifrons subsp. sinensis",
+          "little tern",
+          "e",
+          "",
+          "n",
+          "2",
+          "04-Mar-2020"
+        ],
+        [
+          "Sternula nereis subsp. nereis",
+          "fairy tern",
+          "v",
+          "VU",
+          "n",
+          "5",
+          "27-Feb-2022"
+        ],
+        [
+          "Thalassarche bulleri",
+          "bullers albatross",
+          "",
+          "VU",
+          "n",
+          "2",
+          "11-Mar-2021"
+        ],
+        [
+          "Thalassarche cauta",
+          "shy albatross",
+          "v",
+          "EN",
+          "ae",
+          "10",
+          "31-Mar-2023"
+        ],
+        [
+          "Thalassarche melanophris",
+          "black-browed albatross",
+          "e",
+          "VU",
+          "n",
+          "1",
+          "10-Feb-2017"
+        ],
+        [
+          "Thinornis cucullatus",
+          "hooded plover",
+          "",
+          "PVU",
+          "ae",
+          "73",
+          "18-Feb-2023"
+        ],
+        [
+          "Thinornis rubricollis",
+          "hooded plover",
+          "",
+          "VU",
+          "n",
+          "107",
+          "23-Dec-2020"
+        ],
+        [
+          "Tyto novaehollandiae",
+          "masked owl",
+          "pe",
+          "PVU",
+          "n",
+          "1",
+          "05-Apr-2018"
+        ],
+        [
+          "Tyto novaehollandiae subsp. castanops",
+          "masked owl (Tasmanian)",
+          "e",
+          "VU",
+          "e",
+          "1",
+          "29-Mar-2023"
+        ]
+      ],
+      "processed_data": [
+        {
+          "Species": "Antipodia chaostola subsp. leucophaea",
+          "Common Name": "chaostola skipper",
+          "SS": "e",
+          "NS": "EN",
+          "Bio": "e",
+          "Observation Count": "1",
+          "Last Recorded": "05-08-2017"
+        },
+        {
+          "Species": "Aquila audax",
+          "Common Name": "wedge-tailed eagle",
+          "SS": "pe",
+          "NS": "PEN",
+          "Bio": "n",
+          "Observation Count": "6",
+          "Last Recorded": "30-09-2022"
+        },
+        {
+          "Species": "Aquila audax subsp. fleayi",
+          "Common Name": "tasmanian wedge-tailed eagle",
+          "SS": "e",
+          "NS": "EN",
+          "Bio": "e",
+          "Observation Count": "12",
+          "Last Recorded": "03-12-2013"
+        },
+        {
+          "Species": "Arctocephalus forsteri",
+          "Common Name": "new zealand fur seal",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "30-09-2018"
+        },
+        {
+          "Species": "Ardenna grisea",
+          "Common Name": "sooty shearwater",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "19-01-2021"
+        },
+        {
+          "Species": "Arenaria interpres",
+          "Common Name": "ruddy turnstone",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "4",
+          "Last Recorded": "17-09-2017"
+        },
+        {
+          "Species": "Balaenoptera borealis",
+          "Common Name": "sei whale",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "m",
+          "Observation Count": "1",
+          "Last Recorded": "23-09-2018"
+        },
+        {
+          "Species": "Botaurus poiciloptilus",
+          "Common Name": "australasian bittern",
+          "SS": null,
+          "NS": "EN",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "14-09-1980"
+        },
+        {
+          "Species": "Calidris acuminata",
+          "Common Name": "sharp-tailed sandpiper",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "01-01-1980"
+        },
+        {
+          "Species": "Dasyurus maculatus",
+          "Common Name": "spotted-tailed quoll",
+          "SS": "r",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "25-09-2020"
+        },
+        {
+          "Species": "Dasyurus maculatus subsp. maculatus",
+          "Common Name": "spotted-tailed quoll",
+          "SS": "r",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "04-02-1997"
+        },
+        {
+          "Species": "Dasyurus viverrinus",
+          "Common Name": "eastern quoll",
+          "SS": null,
+          "NS": "EN",
+          "Bio": "n",
+          "Observation Count": "6",
+          "Last Recorded": "19-12-1996"
+        },
+        {
+          "Species": "Diomedea cauta subsp. cauta",
+          "Common Name": "shy albatross",
+          "SS": "pv",
+          "NS": "PVU",
+          "Bio": null,
+          "Observation Count": "1",
+          "Last Recorded": "08-09-1979"
+        },
+        {
+          "Species": "Diomedea epomophora",
+          "Common Name": "southern royal albatross",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "10-02-2017"
+        },
+        {
+          "Species": "Eubalaena australis",
+          "Common Name": "southern right whale",
+          "SS": "e",
+          "NS": "EN",
+          "Bio": "m",
+          "Observation Count": "33",
+          "Last Recorded": "25-07-2021"
+        },
+        {
+          "Species": "Gallinago hardwickii",
+          "Common Name": "lathams snipe",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "14-09-1980"
+        },
+        {
+          "Species": "Gazameda gunnii",
+          "Common Name": "Gunn's screw shell",
+          "SS": "v",
+          "NS": null,
+          "Bio": "ae",
+          "Observation Count": "3",
+          "Last Recorded": "16-12-1997"
+        },
+        {
+          "Species": "Haliaeetus leucogaster",
+          "Common Name": "white-bellied sea-eagle",
+          "SS": "v",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "57",
+          "Last Recorded": "29-06-2023"
+        },
+        {
+          "Species": "Hirundapus caudacutus",
+          "Common Name": "white-throated needletail",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "15",
+          "Last Recorded": "28-03-2021"
+        },
+        {
+          "Species": "Lathamus discolor",
+          "Common Name": "swift parrot",
+          "SS": "e",
+          "NS": "CR",
+          "Bio": "mbe",
+          "Observation Count": "27",
+          "Last Recorded": "08-11-2023"
+        },
+        {
+          "Species": "Limosa lapponica subsp. baueri",
+          "Common Name": "western alaskan bar-tailed godwit",
+          "SS": null,
+          "NS": "EN",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "14-01-1980"
+        },
+        {
+          "Species": "Litoria raniformis",
+          "Common Name": "green and gold frog",
+          "SS": "v",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "07-09-1993"
+        },
+        {
+          "Species": "Megaptera novaeangliae",
+          "Common Name": "humpback whale",
+          "SS": "e",
+          "NS": null,
+          "Bio": "m",
+          "Observation Count": "17",
+          "Last Recorded": "29-07-2019"
+        },
+        {
+          "Species": "Mirounga leonina",
+          "Common Name": "southern elephant seal",
+          "SS": "e",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "4",
+          "Last Recorded": "18-04-2017"
+        },
+        {
+          "Species": "Mirounga leonina subsp. macquariensis",
+          "Common Name": "southern elephant seal",
+          "SS": "pe",
+          "NS": "PVU",
+          "Bio": "n",
+          "Observation Count": "9",
+          "Last Recorded": "13-08-2018"
+        },
+        {
+          "Species": "Neophema chrysostoma",
+          "Common Name": "blue-winged parrot",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "09-02-2014"
+        },
+        {
+          "Species": "Numenius madagascariensis",
+          "Common Name": "eastern curlew",
+          "SS": "e",
+          "NS": "CR",
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "14-09-1980"
+        },
+        {
+          "Species": "Pachyptila turtur subantarctica",
+          "Common Name": "southern fairy prion",
+          "SS": "e",
+          "NS": "VU",
+          "Bio": null,
+          "Observation Count": "1",
+          "Last Recorded": "07-02-1977"
+        },
+        {
+          "Species": "Pseudemoia rawlinsoni",
+          "Common Name": "glossy grass skink",
+          "SS": "r",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "04-10-1978"
+        },
+        {
+          "Species": "Pseudomys novaehollandiae",
+          "Common Name": "new holland mouse",
+          "SS": "e",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "01-04-2009"
+        },
+        {
+          "Species": "Pteropus poliocephalus",
+          "Common Name": "grey-headed flying-fox",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "29-12-2010"
+        },
+        {
+          "Species": "Sarcophilus harrisii",
+          "Common Name": "tasmanian devil",
+          "SS": "e",
+          "NS": "EN",
+          "Bio": "e",
+          "Observation Count": "7",
+          "Last Recorded": "23-04-2023"
+        },
+        {
+          "Species": "Seriolella brama",
+          "Common Name": "Blue Warehou",
+          "SS": null,
+          "NS": "CD",
+          "Bio": "n",
+          "Observation Count": "3",
+          "Last Recorded": "01-01-2002"
+        },
+        {
+          "Species": "Sterna nereis subsp. nereis",
+          "Common Name": "fairy tern",
+          "SS": "pv",
+          "NS": "PVU",
+          "Bio": null,
+          "Observation Count": "9",
+          "Last Recorded": "14-09-1980"
+        },
+        {
+          "Species": "Sternula albifrons subsp. sinensis",
+          "Common Name": "little tern",
+          "SS": "e",
+          "NS": null,
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "04-03-2020"
+        },
+        {
+          "Species": "Sternula nereis subsp. nereis",
+          "Common Name": "fairy tern",
+          "SS": "v",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "5",
+          "Last Recorded": "27-02-2022"
+        },
+        {
+          "Species": "Thalassarche bulleri",
+          "Common Name": "bullers albatross",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "2",
+          "Last Recorded": "11-03-2021"
+        },
+        {
+          "Species": "Thalassarche cauta",
+          "Common Name": "shy albatross",
+          "SS": "v",
+          "NS": "EN",
+          "Bio": "ae",
+          "Observation Count": "10",
+          "Last Recorded": "31-03-2023"
+        },
+        {
+          "Species": "Thalassarche melanophris",
+          "Common Name": "black-browed albatross",
+          "SS": "e",
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "10-02-2017"
+        },
+        {
+          "Species": "Thinornis cucullatus",
+          "Common Name": "hooded plover",
+          "SS": null,
+          "NS": "PVU",
+          "Bio": "ae",
+          "Observation Count": "73",
+          "Last Recorded": "18-02-2023"
+        },
+        {
+          "Species": "Thinornis rubricollis",
+          "Common Name": "hooded plover",
+          "SS": null,
+          "NS": "VU",
+          "Bio": "n",
+          "Observation Count": "107",
+          "Last Recorded": "23-12-2020"
+        },
+        {
+          "Species": "Tyto novaehollandiae",
+          "Common Name": "masked owl",
+          "SS": "pe",
+          "NS": "PVU",
+          "Bio": "n",
+          "Observation Count": "1",
+          "Last Recorded": "05-04-2018"
+        },
+        {
+          "Species": "Tyto novaehollandiae subsp. castanops",
+          "Common Name": "masked owl (Tasmanian)",
+          "SS": "e",
+          "NS": "VU",
+          "Bio": "e",
+          "Observation Count": "1",
+          "Last Recorded": "29-03-2023"
+        }
+      ],
+      "record_count": 43,
+      "mergedCells": [],
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pageNumber": [
+        13,
+        14
+      ],
+      "tableIndex": 2,
+      "tableName": "fauna_range",
+      "description": "NVR Fauna Range Data",
+      "headers": [
+        "Species",
+        "Common Name",
+        "SS",
+        "NS",
+        "BO",
+        "Potential",
+        "Known",
+        "Core"
+      ],
+      "rows": [
+        [
+          "Litoria raniformis",
+          "green and gold frog",
+          "v",
+          "VU",
+          "n",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "Pseudomys novaehollandiae",
+          "new holland mouse",
+          "e",
+          "VU",
+          "n",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "Lathamus discolor",
+          "swift parrot",
+          "e",
+          "CR",
+          "mbe",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "Prototroctes maraena",
+          "australian grayling",
+          "v",
+          "VU",
+          "ae",
+          "19",
+          "0",
+          "0"
+        ],
+        [
+          "Antipodia chaostola",
+          "chaostola skipper",
+          "e",
+          "EN",
+          "ae",
+          "6",
+          "0",
+          "1"
+        ],
+        [
+          "Pseudemoia pagenstecheri",
+          "tussock skink",
+          "v",
+          "",
+          "n",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "Pseudemoia rawlinsoni",
+          "glossy grass skink",
+          "r",
+          "",
+          "n",
+          "0",
+          "0",
+          "2"
+        ],
+        [
+          "Tyto novaehollandiae subsp. castanops",
+          "masked owl (Tasmanian)",
+          "e",
+          "VU",
+          "e",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "Haliaeetus leucogaster",
+          "white-bellied sea-eagle",
+          "v",
+          "",
+          "n",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "Galaxiella pusilla",
+          "eastern dwarf galaxias",
+          "v",
+          "VU",
+          "n",
+          "43",
+          "0",
+          "0"
+        ],
+        [
+          "Dasyurus maculatus subsp. maculatus",
+          "spotted-tailed quoll",
+          "r",
+          "VU",
+          "n",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "Accipiter novaehollandiae",
+          "grey goshawk",
+          "e",
+          "",
+          "n",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "Sarcophilus harrisii",
+          "tasmanian devil",
+          "e",
+          "EN",
+          "e",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "Aquila audax subsp. fleayi",
+          "tasmanian wedge-tailed eagle",
+          "e",
+          "EN",
+          "e",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "Perameles gunnii",
+          "eastern barred bandicoot",
+          "",
+          "VU",
+          "n",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "Dasyurus viverrinus",
+          "eastern quoll",
+          "",
+          "EN",
+          "n",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "processed_data": [
+        {
+          "Species": "Litoria raniformis",
+          "Common Name": "green and gold frog",
+          "SS": "v",
+          "NS": "VU",
+          "BO": "n",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "1"
+        },
+        {
+          "Species": "Pseudomys novaehollandiae",
+          "Common Name": "new holland mouse",
+          "SS": "e",
+          "NS": "VU",
+          "BO": "n",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "1"
+        },
+        {
+          "Species": "Lathamus discolor",
+          "Common Name": "swift parrot",
+          "SS": "e",
+          "NS": "CR",
+          "BO": "mbe",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "1"
+        },
+        {
+          "Species": "Prototroctes maraena",
+          "Common Name": "australian grayling",
+          "SS": "v",
+          "NS": "VU",
+          "BO": "ae",
+          "Potential": "19",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Antipodia chaostola",
+          "Common Name": "chaostola skipper",
+          "SS": "e",
+          "NS": "EN",
+          "BO": "ae",
+          "Potential": "6",
+          "Known": "0",
+          "Core": "1"
+        },
+        {
+          "Species": "Pseudemoia pagenstecheri",
+          "Common Name": "tussock skink",
+          "SS": "v",
+          "NS": null,
+          "BO": "n",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Pseudemoia rawlinsoni",
+          "Common Name": "glossy grass skink",
+          "SS": "r",
+          "NS": null,
+          "BO": "n",
+          "Potential": "0",
+          "Known": "0",
+          "Core": "2"
+        },
+        {
+          "Species": "Tyto novaehollandiae subsp. castanops",
+          "Common Name": "masked owl (Tasmanian)",
+          "SS": "e",
+          "NS": "VU",
+          "BO": "e",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "1"
+        },
+        {
+          "Species": "Haliaeetus leucogaster",
+          "Common Name": "white-bellied sea-eagle",
+          "SS": "v",
+          "NS": null,
+          "BO": "n",
+          "Potential": "2",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Galaxiella pusilla",
+          "Common Name": "eastern dwarf galaxias",
+          "SS": "v",
+          "NS": "VU",
+          "BO": "n",
+          "Potential": "43",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Dasyurus maculatus subsp. maculatus",
+          "Common Name": "spotted-tailed quoll",
+          "SS": "r",
+          "NS": "VU",
+          "BO": "n",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Accipiter novaehollandiae",
+          "Common Name": "grey goshawk",
+          "SS": "e",
+          "NS": null,
+          "BO": "n",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Sarcophilus harrisii",
+          "Common Name": "tasmanian devil",
+          "SS": "e",
+          "NS": "EN",
+          "BO": "e",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Aquila audax subsp. fleayi",
+          "Common Name": "tasmanian wedge-tailed eagle",
+          "SS": "e",
+          "NS": "EN",
+          "BO": "e",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Perameles gunnii",
+          "Common Name": "eastern barred bandicoot",
+          "SS": null,
+          "NS": "VU",
+          "BO": "n",
+          "Potential": "1",
+          "Known": "0",
+          "Core": "0"
+        },
+        {
+          "Species": "Dasyurus viverrinus",
+          "Common Name": "eastern quoll",
+          "SS": null,
+          "NS": "EN",
+          "BO": "n",
+          "Potential": "0",
+          "Known": "0",
+          "Core": "1"
+        }
+      ],
+      "record_count": 16,
+      "mergedCells": [],
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "table_count": 3,
+  "metadata": {
+    "extractor_version": "2.0.0-nvr-specific",
+    "pdfplumber_version": "0.10.0",
+    "extraction_type": "threatened_species_focus",
+    "sections_extracted": [
+      "flora",
+      "fauna",
+      "fauna_range"
+    ]
+  }
+}
